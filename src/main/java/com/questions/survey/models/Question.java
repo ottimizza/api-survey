@@ -23,7 +23,7 @@ public class Question implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	private String desc;
+	private String descQst;
 	
 	
 	
