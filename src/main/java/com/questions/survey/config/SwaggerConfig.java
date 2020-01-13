@@ -24,7 +24,7 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.question.survey"))
+                .apis(RequestHandlerSelectors.basePackage("com.questions.survey"))
                 .paths(regex("/api.*"))
                 .build()
                 .apiInfo(metaInfo());
