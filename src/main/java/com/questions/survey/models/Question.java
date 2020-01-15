@@ -29,5 +29,21 @@ public class Question implements Serializable {
 	
 	@Column(name="alias_qst")
 	private String aliasQst;
+
+	public String getDescQst() {
+		return descQst;
+	}
+
+	public void setDescQst(String descQst) {
+		this.descQst = descQst;
+	}
+
+	public String getAliasQst() {
+		return aliasQst;
+	}
+
+	public void setAliasQst(String aliasQst) {
+		this.aliasQst = aliasQst;
+	}
 	
 }
