@@ -47,8 +47,8 @@ public class QuestionResource {
 		return questionRepository.save(question);
 	}
 	
-	@DeleteMapping("/question")
-	@ApiOperation(value="Delete uma questão")
+	@DeleteMapping("/question/{id}")
+	@ApiOperation(value="Deleta uma questão")
 	public void deleteQuestion(@RequestBody Question question) {
 		questionRepository.delete(question);
 	}
