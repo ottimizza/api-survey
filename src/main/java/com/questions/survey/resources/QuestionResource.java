@@ -49,8 +49,8 @@ public class QuestionResource {
 	
 	@DeleteMapping("/question/{id}")
 	@ApiOperation(value="Deleta uma questão")
-	public void deleteQuestion(@RequestBody Question question) {
-		questionRepository.delete(question);
+	public void deleteQuestion(@PathVariable(value="id") long id) {
+		questionRepository.deleteById(id);
 	}
 	
 	@PutMapping("/question")
