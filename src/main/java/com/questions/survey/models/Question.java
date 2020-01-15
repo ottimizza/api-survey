@@ -2,6 +2,7 @@ package com.questions.survey.models;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="Questions")
+@Table(name="questions")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Question implements Serializable {
@@ -23,8 +24,10 @@ public class Question implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
+	@Column(name="desc_qst")
 	private String descQst;
 	
-	
+	@Column(name="alias_qst")
+	private String aliasQst;
 	
 }
